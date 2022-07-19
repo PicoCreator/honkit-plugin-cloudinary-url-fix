@@ -20,8 +20,14 @@ module.exports = {
 			// Keeps capture group 1 content, while replacing "\_" with "_" respectively, finishing the fix
 			let replacmentStr = "$1_"
 			
-			// Perform the replacement, before processing the page markdown
-			page.content = page.content.replaceAll(matchingRegex, replacmentStr)
+			// Perform the replacement, before processing the page markdown, this can occur multiple times in a URL
+			// hence the looping nature of replaceAll, which will loop on replacement, till no replacement can be found
+			let newContent = page.content.replaceAll(matchingRegex, replacmentStr)
+			while( newContent !== page.content ) {
+				page.content = newContent;
+				newContent = page.content.replaceAll(matchingRegex, replacmentStr);
+			}
+
 			return page;
 		}
 	}
