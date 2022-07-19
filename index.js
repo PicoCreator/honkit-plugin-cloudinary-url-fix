@@ -1,5 +1,5 @@
 module.exports = {
-	"page:before": function(page) {
+	"page": function(page) {
 		
 		// This searches and matches against the following 
 		//
@@ -20,7 +20,7 @@ module.exports = {
 		let replacmentStr = "$1_"
 		
 		// Perform the replacement, before processing the page markdown
-		page.content = page.content.replaceAll(matchingRegex, replacmentStr )
+		page.content = page.content.replaceAll(matchingRegex, replacmentStr)
 		return page;
 	}
 }
