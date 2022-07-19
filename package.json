@@ -1,0 +1,26 @@
+{
+    "name": "honkit-plugin-cloudinary-url-fix",
+    "description": "Fixes URL formatting issues on gitbook.com when it uploads to cloudinary, allowing rendering in honkit",
+    "main": "index.js",
+    "version": "0.1.0",
+    "homepage": "https://github.com/PicoCreator/honkit-plugin-cloudinary-url-fix",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PicoCreator/honkit-plugin-cloudinary-url-fix.git"
+    },
+    "license": "Apache 2",
+    "bugs": {
+        "url": "https://github.com/PicoCreator/honkit-plugin-cloudinary-url-fix/issues"
+    },
+    "engines": {
+        "honkit": ">=3.x.x"
+    },
+    "keywords": [
+        "honkit",
+        "gitbook",
+        "cloudinary",
+        "fix"
+    ],
+    "dependencies": {
+    }
+}
