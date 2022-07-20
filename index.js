@@ -9,10 +9,10 @@ module.exports = {
 			//     https:\/\/[a-zA-Z0-9_\-\.]*\.cloudinary\.com\/                #   https://anything.cloudinary.com/
 			//     [a-zA-Z0-9\-\.\_\~\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\%\=]*    #   all/valid/%uri/encoded/characters, without the character "\"
 			// )
-			// (                                                                  # Capture group 2
-			//	   \\\_                                                           #   Match against "\_" specifically
+			// (                                                                 # Capture group 2
+			//	   \\\_                                                          #   Match against "\_" specifically
 			// )
-			// /g                                                                 # End of regex, matches globally
+			// /g                                                                # End of regex, matches globally
 			//
 			let matchingRegex = /(https:\/\/[a-zA-Z0-9_\-\.]*\.cloudinary\.com\/[a-zA-Z0-9\-\.\_\~\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\%\=]*)(\\\_)/g
 
